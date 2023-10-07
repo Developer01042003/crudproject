@@ -1,0 +1,10 @@
+
+<form class="campsubmit" method="post" action="{% url "add" %}">
+<h6> {{ message }}</h6>   
+    {% csrf_token %}
+    <input type="text" placeholder="campname" name="campname"> <br>
+    <input type="text" placeholder="Your Id " name="idname"> <br>
+    <input type="text" placeholder="Amount " name="amount"> <br>
+    <button>Submit</button>
+  </form>
+  
